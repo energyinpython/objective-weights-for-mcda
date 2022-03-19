@@ -5,10 +5,4 @@ This is Python 3 library dedicated for multi-criteria decision analysis with cri
 # Installation
 Downloading and installation of `objective-weights-mcda` package can be done with using pip
 
-```
-pip install objective-weights-mcda
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> c37568108c6bc17d641e0d1a2810168cf1c9ab59
+```pip install objective-weights-mcda```
