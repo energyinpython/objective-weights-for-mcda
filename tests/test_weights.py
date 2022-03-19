@@ -8,7 +8,7 @@ from objective_weights_mcda import weighting_methods as mcda_weights
 class Test_CRITIC(unittest.TestCase):
 
     def test_critic(self):
-        """Tuş, A., & Aytaç Adalı, E. (2019). The new combination with CRITIC and WASPAS methods 
+        """Test based on paper Tuş, A., & Aytaç Adalı, E. (2019). The new combination with CRITIC and WASPAS methods 
         for the time and attendance software selection problem. Opsearch, 56(2), 528-538."""
 
         matrix = np.array([[5000, 3, 3, 4, 3, 2],
@@ -28,7 +28,7 @@ class Test_CRITIC(unittest.TestCase):
 class Test_MEREC(unittest.TestCase):
 
     def test_merec(self):
-        """Keshavarz-Ghorabaee, M., Amiri, M., Zavadskas, E. K., Turskis, Z., & Antucheviciene, 
+        """Test based on paper Keshavarz-Ghorabaee, M., Amiri, M., Zavadskas, E. K., Turskis, Z., & Antucheviciene, 
         J. (2021). Determination of objective weights using a new method based on the removal 
         effects of criteria (MEREC). Symmetry, 13(4), 525."""
 
@@ -49,7 +49,7 @@ class Test_MEREC(unittest.TestCase):
 class Test_Entropy(unittest.TestCase):
 
     def test_Entropy(self):
-        """Xu, X. (2004). A note on the subjective and objective integrated approach to 
+        """Test based on paper Xu, X. (2004). A note on the subjective and objective integrated approach to 
         determine attribute weights. European Journal of Operational Research, 156(2), 
         530-532."""
 
@@ -65,7 +65,7 @@ class Test_Entropy(unittest.TestCase):
         self.assertEqual(list(np.round(test_result, 4)), list(real_result))
 
     def test_Entropy2(self):
-        """Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
+        """Test based on paper Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
         criteria weights in MCDM. International Journal of Information Technology & Decision 
         Making, 15(02), 267-283."""
 
@@ -85,7 +85,7 @@ class Test_Entropy(unittest.TestCase):
 class Test_CILOS(unittest.TestCase):
 
     def test_cilos(self):
-        """Alinezhad, A., & Khalili, J. (2019). New methods and applications in multiple 
+        """Test based on paper Alinezhad, A., & Khalili, J. (2019). New methods and applications in multiple 
         attribute decision making (MADM) (Vol. 277). Cham: Springer."""
 
         matrix = np.array([[3, 100, 10, 7],
@@ -101,7 +101,7 @@ class Test_CILOS(unittest.TestCase):
 
 
     def test_cilos2(self):
-        """Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
+        """Test based on paper Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
         criteria weights in MCDM. International Journal of Information Technology & Decision 
         Making, 15(02), 267-283."""
 
@@ -115,14 +115,13 @@ class Test_CILOS(unittest.TestCase):
         test_result = mcda_weights.cilos_weighting(matrix, types)
         real_result = np.array([0.3343, 0.2199, 0.1957, 0.2501])
         self.assertEqual(list(np.round(test_result, 4)), list(real_result))
-        # print(np.round(test_result, 4))
 
 
 # Test for IDOCRIW weighting
 class Test_IDOCRIW(unittest.TestCase):
 
     def test_idocriw(self):
-        """Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
+        """Test based on paper Zavadskas, E. K., & Podvezko, V. (2016). Integrated determination of objective 
         criteria weights in MCDM. International Journal of Information Technology & Decision 
         Making, 15(02), 267-283."""
 
@@ -142,7 +141,7 @@ class Test_IDOCRIW(unittest.TestCase):
 class Test_Angle(unittest.TestCase):
 
     def test_angle(self):
-        """Shuai, D., Zongzhun, Z., Yongji, W., & Lei, L. (2012, May). A new angular method to 
+        """Test based on paper Shuai, D., Zongzhun, Z., Yongji, W., & Lei, L. (2012, May). A new angular method to 
         determine the objective weights. In 2012 24th Chinese Control and Decision Conference 
         (CCDC) (pp. 3889-3892). IEEE."""
 
@@ -162,7 +161,7 @@ class Test_Angle(unittest.TestCase):
 class Test_Coeff_var(unittest.TestCase):
 
     def test_coeff_var(self):
-        """Shuai, D., Zongzhun, Z., Yongji, W., & Lei, L. (2012, May). A new angular method to 
+        """Test based on paper Shuai, D., Zongzhun, Z., Yongji, W., & Lei, L. (2012, May). A new angular method to 
         determine the objective weights. In 2012 24th Chinese Control and Decision Conference 
         (CCDC) (pp. 3889-3892). IEEE."""
 
@@ -182,7 +181,7 @@ class Test_Coeff_var(unittest.TestCase):
 class Test_STD(unittest.TestCase):
 
     def test_std(self):
-        """Sałabun, W., Wątróbski, J., & Shekhovtsov, A. (2020). Are mcda methods benchmarkable? 
+        """Test based on paper Sałabun, W., Wątróbski, J., & Shekhovtsov, A. (2020). Are mcda methods benchmarkable? 
         a comparative study of topsis, vikor, copras, and promethee ii methods. Symmetry, 12(9), 
         1549."""
 

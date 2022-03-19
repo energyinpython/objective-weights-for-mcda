@@ -14,7 +14,7 @@ import seaborn as sns
 
 def plot_barplot(df_plot, x_name, y_name, title):
     """
-    Display column stacked column chart of weights for criteria for `x_name == Weighting methods`
+    Display stacked column chart of weights for criteria for `x_name == Weighting methods`
     and column chart of ranks for alternatives `x_name == Alternatives`
 
     Parameters
@@ -114,14 +114,20 @@ class Create_dictionary(dict):
 
 
 def main():
+    # Load data from CSV
     filename = 'dataset_cars.csv'
     data = pd.read_csv(filename, index_col = 'Ai')
+    # Load decision matrix from CSV
     df_data = data.iloc[:len(data) - 1, :]
+    # Criteria types are in the last row of CSV
     types = data.iloc[len(data) - 1, :].to_numpy()
 
+    # Convert decision matrix from dataframe to numpy ndarray type for faster calculations.
     matrix = df_data.to_numpy()
 
+    # Symbols for alternatives Ai
     list_alt_names = [r'$A_{' + str(i) + '}$' for i in range(1, df_data.shape[0] + 1)]
+    # Symbols for columns Cj
     cols = [r'$C_{' + str(j) + '}$' for j in range(1, data.shape[1] + 1)]
 
     # part 1 - study with single weighting method
@@ -138,7 +144,7 @@ def main():
     # rank alternatives according to preference values
     rank = rank_preferences(pref, reverse = False)
 
-    # save results in dataframe in csv file
+    # save results in dataframe
     df_results = pd.DataFrame(index = list_alt_names)
     df_results['Pref'] = pref
     df_results['Rank'] = rank

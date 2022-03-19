@@ -4,11 +4,11 @@ from objective_weights_mcda.additions import rank_preferences
 import unittest
 import numpy as np
 
-# Test for VIKOR weighting
+# Test for VIKOR method
 class Test_VIKOR(unittest.TestCase):
 
     def test_vikor(self):
-        """Papathanasiou, J., & Ploskas, N. (2018). Vikor. In Multiple Criteria Decision Aid 
+        """Test based on paper Papathanasiou, J., & Ploskas, N. (2018). Vikor. In Multiple Criteria Decision Aid 
         (pp. 31-55). Springer, Cham."""
 
         matrix = np.array([[8, 7, 2, 1],
@@ -32,7 +32,7 @@ class Test_VIKOR(unittest.TestCase):
 class Test_Rank_preferences(unittest.TestCase):
 
     def test_rank_preferences(self):
-        """Papathanasiou, J., & Ploskas, N. (2018). Vikor. In Multiple Criteria Decision Aid 
+        """Test based on paper Papathanasiou, J., & Ploskas, N. (2018). Vikor. In Multiple Criteria Decision Aid 
         (pp. 31-55). Springer, Cham."""
 
         pref = np.array([0.640, 1.000, 0.693, 0.271, 0.000, 0.694])
