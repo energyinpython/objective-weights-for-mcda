@@ -7,4 +7,8 @@ Downloading and installation of `objective-weights-mcda` package can be done wit
 
 ```
 pip install objective-weights-mcda
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> c37568108c6bc17d641e0d1a2810168cf1c9ab59
