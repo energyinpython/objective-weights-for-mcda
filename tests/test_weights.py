@@ -1,6 +1,5 @@
 import unittest
 import numpy as np
-from objective_weights_mcda import normalizations as norms
 from objective_weights_mcda import weighting_methods as mcda_weights
 
 
