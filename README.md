@@ -17,8 +17,8 @@ Other modules include:
 - `additions` include `rank_preference` method for ranking alternatives according to MCDA score
 
 - `correlations` include: 
-	- Spearman rank correlation coefficient `spearman_coeff`, 
-	- Weighted Spearman rank correlation coefficient `weighted_spearman_coeff`,
+	- Spearman rank correlation coefficient `spearman`, 
+	- Weighted Spearman rank correlation coefficient `weighted_spearman`,
 	- Pearson correlation coefficient `pearson_coeff`
 	
 - `normalizations` with methods for decision matrix normalization:
