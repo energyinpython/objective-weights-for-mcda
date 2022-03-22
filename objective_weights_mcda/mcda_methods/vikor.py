@@ -8,13 +8,16 @@ class VIKOR(MCDA_method):
     def __init__(self, normalization_method = None, v = 0.5):
         """Create the VIKOR method object.
 
-        Params
+        Parameters
         ------
             normalization_method : function
                 VIKOR does not use normalization by default, thus `normalization_method` is set to None by default.
                 However, you can choose method for normalization of decision matrix chosen `normalization_method` from `normalizations`.
                 It is used in a way `normalization_method(X, types)` where `X` is a decision matrix
                 and `types` is a vector with criteria types where 1 means profit and -1 means cost.
+
+            v : float
+                parameter that is weight of strategy of the majority of criteria (the maximum group utility) 
         """
         self.v = v
         self.normalization_method = normalization_method

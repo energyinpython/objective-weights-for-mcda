@@ -41,4 +41,4 @@ Other modules include:
 	- `angle_weighting` - Angle weighting method
 	- `coeff_var_weighting` - Coefficient of variation weighting method
 	
-Examples of usage of `objective_weights_mcda` are provided on GitHub in examples
+Examples of usage of `objective_weights_mcda` are provided on [GitHub](https://github.com/energyinpython/objective-weights-for-mcda) in [examples](https://github.com/energyinpython/objective-weights-for-mcda/tree/main/examples)
