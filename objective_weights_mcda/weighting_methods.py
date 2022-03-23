@@ -139,15 +139,15 @@ def gini_weighting(X, types):
     G = np.zeros(n)
     # Calculate the Gini coefficient for decision matrix X
     # iteration over criteria j = 1, 2, ..., n
-    for j in range(0, n):
-        # iteration over alternatives i = 1, 2, ..., m
+    for j in range(n):
         Yi = np.zeros(m)
+        # iteration over alternatives i = 1, 2, ..., m
         if np.mean(X[:, j]) != 0:
-            for i, k in itertools.product(range(m), range(m)):
-                Yi[i] += np.abs(X[i, j] - X[k, j]) / (2 * m**2 * (np.sum(X[:, j]) / m))
+            for i in range(m):
+                Yi += np.sum(np.abs(X[i, j] - X[:, j]) / (2 * m**2 * (np.sum(X[:, j]) / m)))
         else:
-            for i, k in itertools.product(range(m), range(m)):
-                Yi[i] += np.abs(X[i, j] - X[k, j]) / (m**2 - m)
+            for i in range(m):
+                Yi += np.sum(np.abs(X[i, j] - X[:, j]) / (m**2 - m))
 
         G[j] = np.sum(Yi)
     # calculate and return the criteria weights by dividing the vector of Gini coefficients by their sum
