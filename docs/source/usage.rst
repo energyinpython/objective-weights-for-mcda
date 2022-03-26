@@ -325,6 +325,9 @@ Returns
 
 .. code-block:: python
 
+	import numpy as np
+	from objective_weights_mcda import normalizations as norms
+
 	matrix = np.array([[8, 7, 2, 1],
     [5, 3, 7, 5],
     [7, 5, 6, 4],
