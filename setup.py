@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="objective-weights-mcda",
     version="0.0.8",
-    author="Aleksandra Ba",
+    author="Aleksandra Bączkiewicz",
     author_email="aleksandra.baczkiewicz@phd.usz.edu.pl",
     description="Package for Multi-Criteria Decision Analysis with Objective Criteria Weighting",
     long_description=long_description,
