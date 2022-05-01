@@ -3,7 +3,6 @@ from ..normalizations import sum_normalization
 from .mcda_method import MCDA_method
 
 
-
 class ARAS(MCDA_method):
     def __init__(self):
         """
