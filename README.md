@@ -43,3 +43,9 @@ Other modules include:
 	- `coeff_var_weighting` - Coefficient of variation weighting method
 	
 Examples of usage of `objective_weights_mcda` are provided on [GitHub](https://github.com/energyinpython/objective-weights-for-mcda) in [examples](https://github.com/energyinpython/objective-weights-for-mcda/tree/main/examples)
+
+## License
+This package called `objective-weights-mcda` was created by Aleksandra Bączkiewicz. It is licensed under the terms of the MIT license.
+
+## Note
+This project is under active development.

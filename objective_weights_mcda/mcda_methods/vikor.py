@@ -1,6 +1,4 @@
 import numpy as np
-
-from ..normalizations import *
 from .mcda_method import MCDA_method
 
 
