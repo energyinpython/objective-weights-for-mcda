@@ -3,6 +3,11 @@
 This is Python 3 library dedicated for multi-criteria decision analysis with criteria weights determined by objective weighting methods.
 The documentation is provided [here](https://objective-weights-for-mcda.readthedocs.io/en/latest/)
 
+This library is a project that is currently under active development. Recently other MCDA methods have been added, namely COPRAS, ARAS, 
+and PROMETHEE II. More methods will be added soon. Other interesting libraries by this author include pyrepo-mcda (focused on MCDA methods 
+based on reference objects and distance metrics for MCDA methods), objective-weighting (focused on objective criteria weighting methods for MCDA), 
+and distance-metrics-mcda (focused on distance metrics for MCDA).
+
 # Installation
 Downloading and installation of `objective-weights-mcda` package can be done with using pip
 
